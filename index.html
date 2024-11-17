@@ -1,58 +1,45 @@
-Terminal basics: 
+# Step 1: Configure Git with your name and email (only needed for the first setup)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 
-#To change directory in terminal:
-'cd directory name'
-
-#To get out of a directory:
-'cd ..'
-
-#To create a new directory:
-'mkdir directory name'
-
-
-
-Git:
-
-# Set name:
-git config --global user.name "Name"   
-
-# Set email
-git config --global user.email "Email" 
-
-# Clone repo
-git clone <repo-url> 
-
-# Stage file    
-git add <file>       
-
-# Stage all files
-git add .               
-
-# Commit changes
-git commit -m "Message"  
-
-# Show status
-git status
-
-# Show commits                         
-git log   
-
-# Push changes
-git push origin main                              
-
-
-
-Init Command: 
-init- used to create a new git repo
+# Step 2: Initialize a local Git repository (use this inside your project folder)
 git init
 
-git remote add origin <- link ->
+# Step 3: Clone an existing GitHub repository (use this if you're working on an existing project)
+git clone <repository-url>
 
-git remote -v (to verify remote)
+# Step 4: Check the status of your repository (to see changes or staged files)
+git status
 
-git branch     (to check branch)
-git branch -M main   (to rename branch)
+# Step 5: Add files to the staging area (stages specific files for commit)
+git add <file>
 
-git push origin main
-git push-u origin main (setting upstream)
+# Step 6: Add all changes (stage all modified, new, or deleted files)
+git add .
 
+# Step 7: Commit the staged changes with a descriptive message
+git commit -m "Your commit message"
+
+# Step 8: Add a remote repository (link your local repo to GitHub)
+git remote add origin <repository-url>
+
+# Step 9: Push changes to GitHub (send your committed changes to the GitHub repository)
+git push -u origin main  # Use 'main' if your default branch is main
+
+# Step 10: Pull updates from GitHub (sync changes from the remote repository to your local repo)
+git pull origin main
+
+# Step 11: Create a new branch (for working on a feature or separate task)
+git branch <branch-name>
+
+# Step 12: Switch to a different branch
+git checkout <branch-name>
+
+# Step 13: Push a new branch to GitHub
+git push -u origin <branch-name>
+
+# Step 14: View commit history (to see all previous commits)
+git log
+
+# Step 15: View a simplified commit history
+git log --oneline
