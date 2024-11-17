@@ -1,5 +1,8 @@
 <h1 style="color: red;">This is a readme file created from local machine.</h1>
+
+
 Configure Git with your name and email (first-time setup):
+
 # git config --global user.name "Your Name"
 # git config --global user.email "your.email@example.com"
 
