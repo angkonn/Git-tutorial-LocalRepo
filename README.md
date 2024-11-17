@@ -31,7 +31,10 @@ Push your changes to GitHub (default branch main):
 Pull updates from the GitHub repository to sync with your local repository:
 # git pull origin main
 
-Branch Commands
+
+
+#Branch Commands
+
 Check the current branch:
 # git branch
 
