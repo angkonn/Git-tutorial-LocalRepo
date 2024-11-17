@@ -33,7 +33,7 @@ Pull updates from the GitHub repository to sync with your local repository:
 
 
 
-#Branch Commands
+# Branch Commands
 
 Check the current branch:
 # git branch
